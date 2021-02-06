@@ -7,11 +7,10 @@ namespace Test
         public const int LETTERX = 0;
         public const int LETTERO = 1;
         public static string PLAYER_1;
-        public static char[] board = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
+        public static char[] board = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
         public static void Display()
         {
-            
-            Console.WriteLine(" Empty Board: " + board);
+            Console.WriteLine(" Empty Board Size " + board);
         }
 
         public static void ChooseLetter()
@@ -43,6 +42,14 @@ namespace Test
             }
         }
 
+        public static void ShowBoard()
+        {           
+            Console.WriteLine(" |" + board[1] + "   | " + board[2] + "  | " + board[3] + "  | ");            
+            Console.WriteLine(" |" + board[4] + "   | " + board[5] + "  | " + board[6] + "  | ");
+            Console.WriteLine(" |" + board[7] + "   | " + board[8] + "  | " + board[9] + "  | ");
+           
+        }
+
 
     }
     class Program
@@ -52,6 +59,8 @@ namespace Test
             Console.WriteLine(" Welcome to Tic Tac Toe ");
             TicTactoe.Display();
             TicTactoe.ChooseLetter();
+            TicTactoe.ShowBoard();
+
         }
     }
 }
