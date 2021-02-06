@@ -52,7 +52,6 @@ namespace Test
             Console.WriteLine(" Welcome to Tic Tac Toe ");
             TicTactoe.Display();
             TicTactoe.ChooseLetter();
-
         }
     }
 }
