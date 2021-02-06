@@ -8,12 +8,14 @@ namespace Test
         public static char[] board = { ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ' };
         public static void Display()
         {
-            Console.WriteLine(board);
+            
+            Console.WriteLine(" Empty Board: " + board);
         }
 
     }
     class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine(" Welcome to Tic Tac Toe ");
